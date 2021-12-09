@@ -18,7 +18,7 @@ defmodule PhoenixCounterWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/counter", CounterController, :index
+    live "/counter", CounterLive, :index
   end
 
   # Other scopes may use custom stacks.
